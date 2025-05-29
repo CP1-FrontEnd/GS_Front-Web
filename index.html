@@ -1,38 +1,251 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/style.css">
     <title>GS-Front/Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
 </head>
 <body>
-
-    <section class="hero">
-        <header>
-            <h1><span>Chuva</span>Alerta</h1>
-        
-            <nav>
-                <ul class="header-menu">
-                    <li><a href="#" class="item-menu">Home</a></li>
-                    <li><a href="./pages/monitoramento.html" class="item-menu">Painel de Monitoramento</a></li>
-                    <li><a href="#" class="item-menu">Problemas</a></li>
-                    <li><a href="#" class="item-menu">Solução</a></li>
-                </ul>
-            </nav>
-
-            <div class="hamburguer">
-                <span class="barra"></span>
-                <span class="barra"></span>
-                <span class="barra"></span>
+    <!-- Header com Menu de Navegação -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>Chuva Alerta</h1>
+            </div>
+            
+            <!-- Ícones de Tema -->
+            <div class="theme-switcher">
+                <button class="theme-btn" data-theme="blue" aria-label="Tema Azul">🌊</button>
+                <button class="theme-btn" data-theme="green" aria-label="Tema Verde">🌱</button>
+                <button class="theme-btn" data-theme="orange" aria-label="Tema Laranja">🔥</button>
             </div>
 
-        </header>
-        
+            <!-- Menu Desktop -->
+            <ul class="nav-menu">
+                <li><a href="#problema" class="nav-link active">Problema</a></li>
+                <li><a href="#tecnologias" class="nav-link">Tecnologias</a></li>
+                <li><a href="#objetivos" class="nav-link">Objetivos</a></li>
+                <li><a href="#publico" class="nav-link">Público-Alvo</a></li>
+                <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                <li><a href="#solucao" class="nav-link">Solução</a></li>
+                <li><a href="#quiz" class="nav-link">Quiz</a></li>
+                <li><a href="./pages/monitoramento.html" class="nav-link">Painel de Monitoramento</a></li>
+            </ul>
 
-    </section>
+            <!-- Menu Hambúrguer -->
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
 
+    <!-- Menu Mobile -->
+    <div class="mobile-menu">
+        <a href="#problema" class="mobile-link">Problema</a>
+        <a href="#tecnologias" class="mobile-link">Tecnologias</a>
+        <a href="#objetivos" class="mobile-link">Objetivos</a>
+        <a href="#publico" class="mobile-link">Público-Alvo</a>
+        <a href="#beneficios" class="mobile-link">Benefícios</a>
+        <a href="#solucao" class="mobile-link">Solução</a>
+        <a href="#quiz" class="mobile-link">Quiz</a>
+    </div>
 
-    <script src="./src/js/script.js"></script>
+    <main class="main">
+        <!-- Seção 1: O Problema -->
+        <section id="problema" class="section">
+            <div class="container">
+                <div class="section-content">
+                    <div class="text-content">
+                        <h2>O Problema das Enchentes</h2>
+                        <p>Enchentes causam bilhões em prejuízos anualmente no Brasil. Falta de monitoramento em tempo real.</p>
+                        <p>Comunidades vulneráveis sofrem sem sistemas de alerta eficazes. Vidas e patrimônios em risco constante.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Cidade alagada durante enchente" class="section-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 2: Tecnologias -->
+        <section id="tecnologias" class="section">
+            <div class="container">
+                <div class="section-content reverse">
+                    <div class="text-content">
+                        <h2>Tecnologias Utilizadas</h2>
+                        <p>Sensores IoT para monitoramento de níveis de água. Inteligência artificial para previsões precisas.</p>
+                        <p>Aplicativo mobile com notificações push instantâneas. Dashboard web para gestores públicos.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Sensores IoT e tecnologia de monitoramento" class="section-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Objetivos -->
+        <section id="objetivos" class="section">
+            <div class="container">
+                <div class="section-content">
+                    <div class="text-content">
+                        <h2>Nossos Objetivos</h2>
+                        <p>Reduzir em 80% os danos causados por enchentes. Salvar vidas através de alertas antecipados.</p>
+                        <p>Criar cidades mais resilientes e inteligentes. Democratizar acesso à informação sobre riscos.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Cidade inteligente com monitoramento" class="section-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 4: Público-Alvo -->
+        <section id="publico" class="section">
+            <div class="container">
+                <div class="section-content reverse">
+                    <div class="text-content">
+                        <h2>Público-Alvo</h2>
+                        <p>Prefeituras e órgãos de defesa civil. Comunidades em áreas de risco de enchentes.</p>
+                        <p>Empresas em regiões vulneráveis a alagamentos. Cidadãos preocupados com segurança familiar.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Comunidade sendo alertada sobre enchentes" class="section-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 5: Benefícios -->
+        <section id="beneficios" class="section">
+            <div class="container">
+                <div class="section-content">
+                    <div class="text-content">
+                        <h2>Benefícios da Solução</h2>
+                        <p>Alertas antecipados salvam vidas e patrimônios. Redução significativa de custos com emergências.</p>
+                        <p>Dados precisos para planejamento urbano sustentável. Maior tranquilidade para famílias vulneráveis.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Família segura recebendo alertas no celular" class="section-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 6: Como Ajuda no Dia a Dia -->
+        <section id="solucao" class="section">
+            <div class="container">
+                <div class="section-content reverse">
+                    <div class="text-content">
+                        <h2>Como Ajuda no Dia a Dia</h2>
+                        <p>Notificações automáticas no smartphone sobre riscos. Rotas alternativas sugeridas em tempo real.</p>
+                        <p>Monitoramento 24/7 sem intervenção humana necessária. Decisões informadas para proteção familiar.</p>
+                    </div>
+                    <div class="image-content">
+                        <!-- SlideShow -->
+                        <div class="slideshow-container">
+                            <div class="slide active">
+                                <img src="/placeholder.svg?height=300&width=400" alt="Aplicativo mobile com alertas" class="slide-image">
+                            </div>
+                            <div class="slide">
+                                <img src="/placeholder.svg?height=300&width=400" alt="Dashboard de monitoramento" class="slide-image">
+                            </div>
+                            <div class="slide">
+                                <img src="/placeholder.svg?height=300&width=400" alt="Sensores em funcionamento" class="slide-image">
+                            </div>
+                            <button class="slide-btn prev" onclick="changeSlide(-1)">❮</button>
+                            <button class="slide-btn next" onclick="changeSlide(1)">❯</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Quiz -->
+        <section id="quiz" class="section quiz-section">
+            <div class="container">
+                <h2>Quiz: Teste Seus Conhecimentos</h2>
+                <div id="quiz-container">
+                    <div id="question-container">
+                        <h3 id="question-text"></h3>
+                        <div id="options-container"></div>
+                        <button id="next-btn" onclick="nextQuestion()">Próxima</button>
+                    </div>
+                    <div id="result-container" style="display: none;">
+                        <h3>Resultado Final</h3>
+                        <p id="score-text"></p>
+                        <button onclick="restartQuiz()">Refazer Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section class="section contact-section">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem *</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Chuva Alerta</h3>
+                    <p>Protegendo comunidades através da tecnologia</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#problema">Sobre o Problema</a></li>
+                        <li><a href="#tecnologias">Tecnologias</a></li>
+                        <li><a href="#beneficios">Benefícios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: contato@chuvaalerta.com</p>
+                    <p>Telefone: (11) 9999-9999</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Chuva Alerta. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/js/navigation.js"></script>
+    <script src="./src/js/slideshow.js"></script>
+    <script src="./src/js/quiz.js"></script>
+    <script src="./src/js/form-validation.js"></script>
+    <script src="./src/js/theme-switcher.js"></script>
 </body>
 </html>
