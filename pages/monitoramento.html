@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuva Alerta - Painel de Monitoramento</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <div class="cloud-icon">
+                        <div class="droplet"></div>
+                    </div>
+                </div>
+                <span class="logo-text">Chuva Alerta</span>
+            </div>
+            <h1 class="main-title">Painel de Monitoramento de Enchentes</h1>
+            <p class="subtitle">Acompanhe em tempo real a situação da sua região</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Neighborhood Cards -->
+        <div class="cards-grid" id="cardsGrid">
+            <!-- Cards serão gerados dinamicamente pelo JavaScript -->
+        </div>
+
+        <!-- Update Button -->
+        <div class="update-section">
+            <button class="update-button" id="updateButton">
+                <div class="refresh-icon" id="refreshIcon"></div>
+                <span id="buttonText">Atualizar Situação</span>
+            </button>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend-card">
+            <h3 class="legend-title">Legenda de Cores</h3>
+            <div class="legend-grid">
+                <div class="legend-item safe">
+                    <div class="legend-color safe"></div>
+                    <div class="legend-text">
+                        <div class="legend-label safe">Verde: Seguro</div>
+                        <div class="legend-range">Até 50%</div>
+                    </div>
+                </div>
+                <div class="legend-item warning">
+                    <div class="legend-color warning"></div>
+                    <div class="legend-text">
+                        <div class="legend-label warning">Amarelo: Atenção</div>
+                        <div class="legend-range">51% - 80%</div>
+                    </div>
+                </div>
+                <div class="legend-item danger">
+                    <div class="legend-color danger"></div>
+                    <div class="legend-text">
+                        <div class="legend-label danger">Vermelho: Risco Alto</div>
+                        <div class="legend-range">Acima de 80%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text"> Chuva Alerta</p>
+            <p class="footer-subtext">Sistema de monitoramento desenvolvido para fins educacionais</p>
+        </div>
+    </footer>
+
+    <script src="../src/js/script.js"></script>
+</body>
+</html>
