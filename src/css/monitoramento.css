@@ -11,6 +11,7 @@ body {
     color: #333;
 }
 
+
 .header {
     background: white;
     padding: 20px;
@@ -346,6 +347,26 @@ body {
     color: #666;
 }
 
+.botao {
+    text-align: center;
+    display: block;
+}
+
+.botao .voltar {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1565c0;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.botao .voltar:hover {
+    background-color: #0f4c91;
+}
+
 .footer {
     background: white;
     text-align: center;
@@ -386,3 +407,4 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
