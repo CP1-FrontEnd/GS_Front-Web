@@ -72,6 +72,21 @@ body {
     transition: all var(--transition-fast);
 }
 
+#monitoramento{
+    color: var(--text-secondary);
+    font-weight: 500;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    transition: all var(--transition-fast);
+}
+
+#monitoramento:hover,
+#monitoramento.active {
+    color: var(--primary-color);
+    background-color: var(--background-color);
+
+}
+
 .nav-link:hover,
 .nav-link.active {
     color: var(--primary-color);
