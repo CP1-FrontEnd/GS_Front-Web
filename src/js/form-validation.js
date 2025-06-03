@@ -4,21 +4,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const emailInput = document.getElementById('email');
     const messageInput = document.getElementById('message');
 
-    // Função para mostrar erro
     function showError(input, message) {
         const errorElement = document.getElementById(`${input.id}-error`);
         errorElement.textContent = message;
         input.style.borderColor = '#dc2626';
     }
 
-    // Função para limpar erro
     function clearError(input) {
         const errorElement = document.getElementById(`${input.id}-error`);
         errorElement.textContent = '';
         input.style.borderColor = 'var(--border-color)';
     }
 
-    // Validação em tempo real
     nameInput.addEventListener('input', function() {
         if (this.value.trim().length < 2) {
             showError(this, 'Nome deve ter pelo menos 2 caracteres');
@@ -44,19 +41,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Validação no envio
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         
         let isValid = true;
 
-        // Validar nome
         if (nameInput.value.trim().length < 2) {
             showError(nameInput, 'Nome é obrigatório e deve ter pelo menos 2 caracteres');
             isValid = false;
         }
 
-        // Validar email
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(emailInput.value)) {
             showError(emailInput, 'Email é obrigatório e deve ser válido');
